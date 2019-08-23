@@ -36,10 +36,12 @@ public class GalleryApp : Gtk.Application {
 		main_window.default_height = 600;
 		main_window.title = "Simple Image Gallery";
 		
+		
 		var layout = new Gtk.Grid ();
 		layout.column_spacing = 10;
 		layout.row_spacing = 10;
-
+		layout.halign = Gtk.Align.CENTER;
+		layout.valign = Gtk.Align.CENTER;
 		var image = new Gtk.Image.from_file ("images/image_1.jpg");
 		
 		var left_button = new Gtk.Button.with_label ("<-");
